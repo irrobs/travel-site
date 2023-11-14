@@ -1,0 +1,20 @@
+.grid {
+  &__2-col {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    @mixin atMedium {
+      grid-template-columns: 1fr 2fr;
+    }
+
+    &--beginning {
+      @mixin atMedium {
+        grid-template-columns: 37fr 63fr;
+      }
+    }
+  }
+
+  &--gutter {
+    gap: 65px;
+  }
+}
