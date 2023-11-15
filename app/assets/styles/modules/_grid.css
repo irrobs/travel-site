@@ -26,4 +26,15 @@
       column-gap: 100px;
     }
   }
+
+  &__3-col {
+    row-gap: 100px;
+
+    @mixin atMedium {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @mixin atLarge {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
 }
