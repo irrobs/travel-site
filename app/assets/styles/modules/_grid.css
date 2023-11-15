@@ -1,8 +1,6 @@
 .grid {
+  display: grid;
   &__2-col {
-    display: grid;
-    grid-template-columns: 1fr;
-
     @mixin atMedium {
       grid-template-columns: 1fr 2fr;
     }
@@ -12,9 +10,20 @@
         grid-template-columns: 37fr 63fr;
       }
     }
+
+    &--equal {
+      grid-template-columns: 1fr;
+      @mixin atSmall {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
   }
 
   &--gutter {
     gap: 65px;
+
+    &-large {
+      column-gap: 100px;
+    }
   }
 }

@@ -1,0 +1,33 @@
+.feature {
+  display: grid;
+
+  grid-template-columns: 1fr;
+  grid-template-rows: 64px;
+  justify-items: center;
+  row-gap: 1rem;
+  @mixin atSmall {
+    justify-items: start;
+    grid-template-columns: 64px 1fr;
+    grid-template-rows: min-content;
+    column-gap: 2rem;
+    row-gap: 0;
+  }
+
+  &__title {
+    align-self: start;
+    font-size: 1.6rem;
+    font-weight: 300;
+    margin: 0;
+
+    @mixin atSmall {
+      font-size: 1.875rem;
+    }
+  }
+
+  &__text {
+    grid-column: 1 / -1;
+    @mixin atSmall {
+      grid-column: 2 / 3;
+    }
+  }
+}
