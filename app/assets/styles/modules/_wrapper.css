@@ -7,6 +7,10 @@
     max-width: 976px;
   }
 
+  &--flex {
+    display: flex;
+    align-items: center;
+  }
   &--b-margin {
     margin-bottom: 1rem;
     @mixin atSmall {

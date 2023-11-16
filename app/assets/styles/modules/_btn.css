@@ -16,4 +16,12 @@
       font-size: 1.25rem;
     }
   }
+
+  &--header {
+    height: min-content;
+
+    @mixin atMedium {
+      margin-left: 20px;
+    }
+  }
 }
