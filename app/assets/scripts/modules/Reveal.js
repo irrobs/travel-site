@@ -19,7 +19,6 @@ class Reveal {
     window.addEventListener(
       "resize",
       debounce(() => {
-        console.log("res");
         this.browserHeight = window.innerHeight;
       }, 333)
     );
