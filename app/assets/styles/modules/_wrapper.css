@@ -7,6 +7,10 @@
     max-width: 976px;
   }
 
+  &--narrow {
+    max-width: 470px;
+  }
+
   &--flex {
     display: flex;
     align-items: center;
