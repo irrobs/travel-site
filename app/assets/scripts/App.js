@@ -2,7 +2,9 @@ import "../styles/styles.css";
 import MobileMenu from "./modules/MobileMenu";
 import Reveal from "./modules/Reveal";
 import StickyHeader from "./modules/StickyHeader";
+import ClientArea from "./modules/ClientArea";
 
+new ClientArea();
 new Reveal(document.querySelectorAll(".feature"), 75);
 new Reveal(document.querySelectorAll(".testimonial"), 60);
 const mobileMenu = new MobileMenu();
